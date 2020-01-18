@@ -12,8 +12,7 @@
 <tbody>
     {% for todo in object_list %}
     <tr>
-    <td>{{ todo.name }}</td>
-    <td>{{ todo.pages }}</td>
+    <td>{{ todo.item }}</td>
     <td><a href="{% url "todo_view" todo.id %}">view</a></td>
     <td><a href="{% url "todo_edit" todo.id %}">edit</a></td>
     <td><a href="{% url "todo_delete" todo.id %}">delete</a></td>
