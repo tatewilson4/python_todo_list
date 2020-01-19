@@ -8,8 +8,8 @@
     <title></title>
 </head>
 <body>
-    <nav class="navbar navbar-light bg-light">
-        <a href="{% url "todo_list" %}">Todo List</a>
+    <nav class="navbar navbar-light">
+        <a id="home_icon" href="{% url "todo_list" %}">Todo List</a>
         <form class="form-inline">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
@@ -19,33 +19,5 @@
     {% block content %}
 
     {% endblock content %}
-
-    <footer>
-        <div class="container-fluid padding">
-            <div class="row text-center">
-                <div class="col">
-                    <hr class="light">
-                    <h5>Something</h5>
-                    <hr class="light">
-                    <p>555-555-5555</p>
-                    <p>email@blah.com</p>
-                    <p>100 Blah Street</p>
-                    <p>City, State, 00000</p>
-                </div>
-                <div class="col">
-                    <hr class="light">
-                    <h5>Contact</h5>
-                    <hr class="light">
-                    <p><a href="#"><img src="../../../static/img/Github.png" class="icon_img"></a></p>
-                    <p><a href="#"><img src="../../../static/img/Linkedin.png" class="icon_img"></a></p>
-                    <p><a href="#"><img src="../../../static/img/Google plus.png" class="icon_img"></a></p>
-                </div>
-                <div class="col-12">
-                    <hr class="light-100">
-                    <h5>&copy; company.com</h5>
-                </div>
-            </div>
-        </div>
-    </footer>
 </body>
 </html>

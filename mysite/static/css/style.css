@@ -1,3 +1,65 @@
+nav, footer {
+    background-color: #202020;
+}
+
+.form-inline {
+    padding-top: 12px;
+}
+
+body {
+    background-color: #e6e2d3;
+}
+
+h3{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+h6 {
+    font-size: 20px;
+}
+
+.d-flex {
+    font-size: 20px;
+}
+#home_icon {
+    color: #FF9933 !important;
+}
+a {
+    text-decoration: none;
+    color: #FF6633;
+}
+
+a:hover {
+    color: red;
+    text-decoration: none;
+}
+
+.p-2 {
+    height: 75px;
+}
+
+input {
+    border-radius: 5px;
+}
+
+.submit_input:hover {
+    opacity: .4;
+}
+
+
+.footer_text {
+    color: #e6e2d3;
+}
+
+hr.light {
+    border-top: 1px solid #d5d5d5;
+    width: 75%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+}
+
 .icon_img {
     height: 42px;
     width: 42px;

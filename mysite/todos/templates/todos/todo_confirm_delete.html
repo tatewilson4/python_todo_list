@@ -1,8 +1,33 @@
 {% extends 'todos/base.html' %}
 {% block content %}
-<h1>Todo Delete</h1>
-<form method="post">{% csrf_token %}
-    Are you sure you want to delete "{{ object }}" ?
-    <input type="submit" value="Submit" />
-</form>
+<div class="container">
+    <h3>Todo Delete</h3>
+    <form method="post">{% csrf_token %}
+        Are you sure you want to delete "{{ object }}" ?
+        <input class="submit_input" type="submit" value="Submit" />
+    </form>
+</div>
+<footer class="fixed-bottom">
+    <div class="container-fluid padding">
+        <div class="row text-center">
+            <div class="col footer_text">
+                <hr class="light">
+                <h5>Something</h5>
+                <hr class="light">
+                <p>555-555-5555</p>
+                <p>email@blah.com</p>
+                <p>100 Blah Street</p>
+                <p>City, State, 00000</p>
+            </div>
+            <div class="col footer_text">
+                <hr class="light">
+                <h5>Contact</h5>
+                <hr class="light">
+                <p><a href="#"><img src="../../../static/img/Github.png" class="icon_img"></a></p>
+                <p><a href="#"><img src="../../../static/img/Linkedin.png" class="icon_img"></a></p>
+                <p><a href="#"><img src="../../../static/img/Google plus.png" class="icon_img"></a></p>
+            </div>
+        </div>
+    </div>
+</footer>
 {% endblock content %}
