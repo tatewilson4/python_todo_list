@@ -8,6 +8,9 @@ class TodoForm(ModelForm):
         model = Todo
         fields = ['item']
 
+def home(request):
+    return render(request, 'todos/base.html')
+
 def todo_list(request, template_name="todos/todo_list.html"):
     todo = Todo.objects.all()
     data = {}

@@ -1,24 +1,27 @@
-<h1>Todo List Items</h1>
+{% extends 'todos/base.html' %}
 
-<table border="1">
-<thead>
-    <tr>
-    <th>Item</th>
-    <th>View</th>
-    <th>Edit</th>
-    <th>Delete</th>
-    </tr>
-</thead>
-<tbody>
+{% block content %}
+<h1>Todo List Items</h1>
+<div class="container">
+  <div class="row">
+    <div class="col">Item</div>
+    <div class="col">View</div>
+    <div class="col">Edit</div>
+    <div class="col">Delete</div>
+  </div>
+</div>
+
     {% for todo in object_list %}
-    <tr>
-    <td>{{ todo.item }}</td>
-    <td><a href="{% url "todo_view" todo.id %}">view</a></td>
-    <td><a href="{% url "todo_edit" todo.id %}">edit</a></td>
-    <td><a href="{% url "todo_delete" todo.id %}">delete</a></td>
-    </tr>
+
+    <div class="container">
+      <div class="row">
+        <div class="col">{{ todo.item }}</div>
+        <div class="col"><a href="{% url "todo_view" todo.id %}">view</a></div>
+        <div class="col"><a href="{% url "todo_edit" todo.id %}">edit</a></div>
+        <div class="col"><a href="{% url "todo_delete" todo.id %}">delete</a></div>
+      </div>
+    </div>
     {% endfor %}
-</tbody>
-</table>
 
 <a href="{% url "todo_new" %}">New</a>
+{% endblock content %}

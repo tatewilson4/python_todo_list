@@ -1,5 +1,9 @@
+{% extends 'todos/base.html' %}
+{% block content %}
+
 <h1>Todo Item Edit</h1>
 <form method="post">{% csrf_token %}
     {{ form.as_p }}
     <input type="submit" value="Submit" />
 </form>
+{% endblock content %}
